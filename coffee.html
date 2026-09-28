@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brew & Bean Coffee</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="coffeestyle.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <a href="#home" class="logo">
+        Brew<span>&</span>Bean
+    </a>
+
+    <nav class="navbar" id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-icons">
+
+        <button id="search-btn" class="icon-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button id="cart-btn" class="icon-btn cart-button">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </button>
+
+        <button id="menu-btn" class="icon-btn menu-button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
+
+<!-- ================= SEARCH PANEL ================= -->
+
+<div class="search-panel" id="search-panel">
+
+    <div class="search-box-wrapper">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            id="search-box"
+            placeholder="Search coffee, food..."
+        >
+
+    </div>
+
+</div>
+
+<!-- ================= CART PANEL ================= -->
+
+<div class="cart-panel" id="cart-panel">
+
+    <div class="cart-header">
+
+        <h2>Your Order</h2>
+
+        <button id="close-cart">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+    <div id="cart-items" class="cart-items">
+
+        <div class="empty">
+            Your order is empty.
+        </div>
+
+    </div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>Total</span>
+
+            <strong>
+                ₹<span id="cart-total">0</span>
+            </strong>
+
+        </div>
+
+        <button id="checkout-btn" class="checkout-btn">
+            Checkout
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ================= HERO / HOME ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            WELCOME TO BREW & BEAN
+        </p>
+
+        <h1>
+            Fresh Coffee.<br>
+            <span>Good Moments.</span>
+        </h1>
+
+        <p>
+            Discover handcrafted coffee, delicious food
+            and a cozy place made for good conversations.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#menu" class="primary-btn">
+                Explore Menu
+            </a>
+
+            <a href="#contact" class="secondary-btn">
+                Visit Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= TRUST STRIP ================= -->
+
+<section class="trust">
+
+    <div class="trust-item">
+
+        <i class="fa-solid fa-mug-hot"></i>
+
+        <div>
+
+            <strong>Fresh Coffee</strong>
+
+            <span>
+                Freshly brewed every day
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="trust-item">
+
+        <i class="fa-solid fa-mug-hot"></i>
+
+        <div>
+
+            <strong>Quality Coffee</strong>
+
+            <span>
+                Carefully selected beans
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="trust-item">
+
+        <i class="fa-solid fa-heart"></i>
+
+        <div>
+
+            <strong>Made With Love</strong>
+
+            <span>
+                Served with a smile
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about section" id="about">
+
+    <div class="about-image">
+
+        <img
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=80"
+            alt="Coffee shop"
+        >
+
+    </div>
+
+    <div class="about-content">
+
+        <p class="section-label">
+            ABOUT US
+        </p>
+
+        <h2>
+            More Than Just<br>
+            <span>A Cup Of Coffee</span>
+        </h2>
+
+        <p>
+            Brew & Bean is a cozy coffee place where great coffee,
+            delicious food and meaningful conversations come together.
+        </p>
+
+        <p>
+            We believe every cup should be made with care.
+            From our carefully selected beans to freshly prepared
+            food, everything is made to give you a memorable experience.
+        </p>
+
+        <a href="#menu" class="primary-btn">
+            Discover Our Menu
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= MENU ================= -->
+
+<section class="menu section" id="menu">
+
+    <div class="section-heading">
+
+        <p class="section-label">
+            OUR MENU
+        </p>
+
+        <h2>
+            Something For <span>Everyone</span>
+        </h2>
+
+        <p>
+            Freshly prepared coffee and delicious bites.
+        </p>
+
+    </div>
+
+    <div class="filters">
+
+        <button class="filter active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter" data-filter="hot">
+            Hot Coffee
+        </button>
+
+        <button class="filter" data-filter="cold">
+            Cold Coffee
+        </button>
+
+        <button class="filter" data-filter="food">
+            Food
+        </button>
+
+    </div>
+
+    <div class="menu-grid">
+
+        <!-- Cappuccino -->
+
+        <article
+            class="menu-card"
+            data-category="hot"
+            data-name="Cappuccino"
+        >
+
+            <div class="menu-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80"
+                    alt="Cappuccino"
+                >
+
+                <span class="price">
+                    ₹160
+                </span>
+
+            </div>
+
+            <div class="menu-info">
+
+                <h3>
+                    Cappuccino
+                </h3>
+
+                <p>
+                    Rich espresso with creamy steamed milk.
+                </p>
+
+                <button
+                    class="add-cart"
+                    data-name="Cappuccino"
+                    data-price="160"
+                >
+                    Add to Order
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- Cafe Latte -->
+
+        <article
+            class="menu-card"
+            data-category="hot"
+            data-name="Café Latte"
+        >
+
+            <div class="menu-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1561882468-9110e03e0f78?auto=format&fit=crop&w=800&q=80"
+                    alt="Cafe Latte"
+                >
+
+                <span class="price">
+                    ₹180
+                </span>
+
+            </div>
+
+            <div class="menu-info">
+
+                <h3>
+                    Café Latte
+                </h3>
+
+                <p>
+                    Smooth espresso blended with steamed milk.
+                </p>
+
+                <button
+                    class="add-cart"
+                    data-name="Café Latte"
+                    data-price="180"
+                >
+                    Add to Order
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- Americano -->
+
+        <article
+            class="menu-card"
+            data-category="hot"
+            data-name="Americano"
+        >
+
+            <div class="menu-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?auto=format&fit=crop&w=800&q=80"
+                    alt="Americano"
+                >
+
+                <span class="price">
+                    ₹130
+                </span>
+
+            </div>
+
+            <div class="menu-info">
+
+                <h3>
+                    Americano
+                </h3>
+
+                <p>
+                    Bold espresso with hot water.
+                </p>
+
+                <button
+                    class="add-cart"
+                    data-name="Americano"
+                    data-price="130"
+                >
+                    Add to Order
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- Cold Brew -->
+
+        <article
+            class="menu-card"
+            data-category="cold"
+            data-name="Cold Brew"
+        >
+
+            <div class="menu-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80"
+                    alt="Cold Brew"
+                >
+
+                <span class="price">
+                    ₹190
+                </span>
+
+            </div>
+
+            <div class="menu-info">
+
+                <h3>
+                    Cold Brew
+                </h3>
+
+                <p>
+                    Smooth and refreshing slow-brewed coffee.
+                </p>
+
+                <button
+                    class="add-cart"
+                    data-name="Cold Brew"
+                    data-price="190"
+                >
+                    Add to Order
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- Iced Latte -->
+
+        <article
+            class="menu-card"
+            data-category="cold"
+            data-name="Iced Latte"
+        >
+
+            <div class="menu-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80"
+                    alt="Iced Latte"
+                >
+
+                <span class="price">
+                    ₹200
+                </span>
+
+            </div>
+
+            <div class="menu-info">
+
+                <h3>
+                    Iced Latte
+                </h3>
+
+                <p>
+                    Chilled espresso with creamy cold milk.
+                </p>
+
+                <button
+                    class="add-cart"
+                    data-name="Iced Latte"
+                    data-price="200"
+                >
+                    Add to Order
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- Butter Croissant -->
+
+        <article
+            class="menu-card"
+            data-category="food"
+            data-name="Butter Croissant"
+        >
+
+            <div class="menu-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80"
+                    alt="Croissant"
+                >
+
+                <span class="price">
+                    ₹140
+                </span>
+
+            </div>
+
+            <div class="menu-info">
+
+                <h3>
+                    Butter Croissant
+                </h3>
+
+                <p>
+                    Crispy, buttery and freshly baked.
+                </p>
+
+                <button
+                    class="add-cart"
+                    data-name="Butter Croissant"
+                    data-price="140"
+                >
+                    Add to Order
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- Avocado Toast -->
+
+        <article
+            class="menu-card"
+            data-category="food"
+            data-name="Avocado Toast"
+        >
+
+            <div class="menu-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=800&q=80"
+                    alt="Avocado Toast"
+                >
+
+                <span class="price">
+                    ₹240
+                </span>
+
+            </div>
+
+            <div class="menu-info">
+
+                <h3>
+                    Avocado Toast
+                </h3>
+
+                <p>
+                    Toasted bread topped with creamy avocado.
+                </p>
+
+                <button
+                    class="add-cart"
+                    data-name="Avocado Toast"
+                    data-price="240"
+                >
+                    Add to Order
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- Chocolate Cake -->
+
+        <article
+            class="menu-card"
+            data-category="food"
+            data-name="Chocolate Cake"
+        >
+
+            <div class="menu-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80"
+                    alt="Chocolate Cake"
+                >
+
+                <span class="price">
+                    ₹220
+                </span>
+
+            </div>
+
+            <div class="menu-info">
+
+                <h3>
+                    Chocolate Cake
+                </h3>
+
+                <p>
+                    Soft chocolate cake with rich chocolate flavor.
+                </p>
+
+                <button
+                    class="add-cart"
+                    data-name="Chocolate Cake"
+                    data-price="220"
+                >
+                    Add to Order
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+    <p id="no-results" class="no-results">
+        No item found.
+    </p>
+
+</section>
+
+<!-- ================= OFFER ================= -->
+
+<section class="offer">
+
+    <div class="offer-content">
+
+        <p class="section-label">
+            SPECIAL OFFER
+        </p>
+
+        <h2>
+            Coffee + Croissant
+        </h2>
+
+        <p>
+            Any coffee with a freshly baked croissant
+            for only ₹249.
+        </p>
+
+        <a href="#menu" class="primary-btn">
+            Order Now
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery section" id="gallery">
+
+    <div class="section-heading">
+
+        <p class="section-label">
+            OUR GALLERY
+        </p>
+
+        <h2>
+            A Little Taste Of <span>Brew & Bean</span>
+        </h2>
+
+    </div>
+
+    <div class="gallery-grid">
+
+        <img
+            src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=900&q=80"
+            alt="Coffee shop interior"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=900&q=80"
+            alt="Coffee"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=80"
+            alt="Cafe"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=900&q=80"
+            alt="Coffee cup"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80"
+            alt="Coffee cup"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1554118811-1e0d58224f31?auto=format&fit=crop&w=900&q=80"
+            alt="Cafe interior"
+        >
+
+    </div>
+
+</section>
+
+<!-- ================= REVIEWS ================= -->
+
+<section class="reviews section" id="reviews">
+
+    <div class="section-heading">
+
+        <p class="section-label">
+            CUSTOMER REVIEWS
+        </p>
+
+        <h2>
+            What People <span>Say</span>
+        </h2>
+
+    </div>
+
+    <div class="review-grid">
+
+        <div class="review-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "Amazing coffee and such a peaceful place.
+                The cappuccino was really good."
+            </p>
+
+            <h3>
+                Ananya
+            </h3>
+
+        </div>
+
+        <div class="review-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "Loved the ambience and the food.
+                Perfect place to spend time with friends."
+            </p>
+
+            <h3>
+                Rahul
+            </h3>
+
+        </div>
+
+        <div class="review-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "Great service, fresh coffee and delicious
+                croissants. Definitely coming back."
+            </p>
+
+            <h3>
+                Priya
+            </h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-heading">
+
+        <p class="section-label">
+            CONTACT US
+        </p>
+
+        <h2>
+            We'd Love To <span>Hear From You</span>
+        </h2>
+
+        <p>
+            Have a question, suggestion or want to visit us?
+            Get in touch with Brew & Bean.
+        </p>
+
+    </div>
+
+    <div class="contact-content">
+
+        <div class="contact-info">
+
+            <div class="contact-box">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div>
+
+                    <h3>
+                        Visit Us
+                    </h3>
+
+                    <p>
+                        24 Coffee Street,<br>
+                        Downtown, India
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="contact-box">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div>
+
+                    <h3>
+                        Call Us
+                    </h3>
+
+                    <p>
+                        +91 98765 43210
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="contact-box">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div>
+
+                    <h3>
+                        Email Us
+                    </h3>
+
+                    <p>
+                        hello@brewandbean.com
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="contact-box">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+
+                <div>
+
+                    <h3>
+                        Opening Hours
+                    </h3>
+
+                    <p>
+                        Monday - Sunday<br>
+                        8:00 AM - 10:00 PM
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="contact-form">
+
+            <h3>
+                Send Us A Message
+            </h3>
+
+            <p>
+                Fill out the form and we'll get back to you.
+            </p>
+
+            <form id="contact-form">
+
+                <div class="form-row">
+
+                    <input
+                        type="text"
+                        id="contact-name"
+                        placeholder="Your Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        placeholder="Your Email"
+                        required
+                    >
+
+                </div>
+
+                <input
+                    type="text"
+                    placeholder="Subject"
+                    required
+                >
+
+                <textarea
+                    placeholder="Your Message"
+                    rows="6"
+                    required
+                ></textarea>
+
+                <button
+                    type="submit"
+                    class="contact-submit"
+                >
+                    Send Message
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-brand">
+
+        <div class="logo">
+            Brew<span>&</span>Bean
+        </div>
+
+        <p>
+            Good coffee. Good food.
+            Good moments.
+        </p>
+
+    </div>
+
+    <div class="footer-center">
+
+        <p>
+            © 2026 Brew & Bean Coffee
+        </p>
+
+        <p class="made-by">
+
+            Made with ☕ &nbsp;by
+
+            <strong>
+                Devika Chandrakar
+            </strong>
+
+        </p>
+
+    </div>
+
+    <a href="#home" class="back-top">
+        Back to top ↑
+    </a>
+
+</footer>
+
+<!-- ================= TOAST ================= -->
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
